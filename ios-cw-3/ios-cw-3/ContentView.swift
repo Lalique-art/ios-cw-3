@@ -12,14 +12,42 @@ struct ContentView: View {
         VStack{
             Text("the walking dead")
                 .font(.largeTitle)
-        Image("carl")
+            HStack{ Image("carl")
+                    .resizable()
+                    .frame(width: 130, height: 130)
+                Image("maggie")
+                    .resizable()
+                    .frame(width: 130, height: 130)}
+            HStack{ Image("glenn")
+                    .resizable()
+                    .frame(width: 130, height: 130)
+                Image("rick")
+                    .resizable()
+                    .frame(width: 130, height: 130)
+                Image("daryl")
+                    .resizable()
+                    .frame(width: 130, height: 130)}
+         
+            
         
     
 
+        }
+        }
+    }
+            
+            
+            
+            
+            
+            
+
+        
+struct ContentView_Previews: PreviewProvider {
+
     
-        
-        
-            struct ContentView_Previews: PreviewProvider
-        var previews: some View {
+      static  var previews: some View {
         ContentView()
-    
+        
+        }
+    }
