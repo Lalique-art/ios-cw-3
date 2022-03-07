@@ -9,15 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View{
-    
-        VStack("my fav")
+        VStack{
+            Text("the walking dead")
+                .font(.largeTitle)
+        Image("carl")
         
-    }
-    image{""}
     
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+    
+        
+        
+            struct ContentView_Previews: PreviewProvider
+        var previews: some View {
         ContentView()
-    }
-}
+    
